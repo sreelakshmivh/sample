@@ -1,0 +1,243 @@
+* {
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    /* view port height. 1 vh=1% of the height
+    vh refers to the visible portion of the browser -moz-window-dragging
+    height:100% mean 100 percentage of the containing elemnet */
+    position: relative;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 85%;
+    align-items: center; /to vertically align the items at center/
+  }
+  ul li {
+    display: inline;
+    margin: 10px 25px;
+    list-style-type: none;
+  }
+  .link:hover {
+    color: red;
+  }
+  .link {
+    font-size: 21px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+  }
+  #last_name {
+    color: orange;
+    font-size: 60px;
+  }
+  .title {
+    margin-left: 8%;
+    margin-top: 13%;
+  }
+  .title h1 {
+    font-size: 62px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .title p {
+    font-size: 19px;
+    font-weight: 500;
+    /* margin-top: 20px; */
+    margin-bottom: 50px;
+  }
+  .title a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 60px;
+    bottom: 0px;
+  }
+  .imagegroup {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    /* it moves th elemnt horizontally by 50% of its own width in the opposite ditection*/
+  
+    transition: bottom 1s, left 2s;
+  }
+  .images:hover #shape {
+    bottom: 70px;
+  }
+  .images:hover #girl {
+    left: 40%;
+  }
+  #about {
+    margin: 13% 8% 0px 8%;
+  }
+  .heading {
+    text-align: center;
+  }
+  
+  .heading span {
+    color: green;
+    font-size: 20px;
+  }
+  .heading h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-top: 3%;
+  }
+  .abt-img {
+    width: 80%;
+  }
+  .about_details p {
+    font-size: 18px;
+  }
+  .information {
+    margin-top: 20px;
+  }
+  .info_box {
+    margin-bottom: 2rem; /*1 re,=16px */
+    font-size: 20px;
+  }
+  .info_box span {
+    margin-left: 15px;
+  }
+  #skills {
+    margin: 8% 8% 0px 8%;
+  }
+  
+  .skills_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-top: 4%;
+  }
+  .progress_bar {
+    margin-top: 25px;
+  }
+  .bar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .bar_container h3,
+  span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bar {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+  }
+  .html-bar {
+    background-color: orange;
+    width: 95%;
+  }
+  .css-bar {
+    background-color: orange;
+    width: 88%;
+  }
+  .js-bar {
+    background-color: orange;
+    width: 70%;
+  }
+  .react-bar {
+    background-color: orange;
+    width: 65%;
+  }
+  #contact {
+    margin: 8% 8% 0px 8%;
+  }
+  .icon-set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  .icon {
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    border-radius: 50%;
+    display: flex;
+  }
+  .icon i {
+    color: black;
+    font-size: 30px;
+  }
+  .icon:hover {
+    background-image: linear-gradient(to bottom right, yellow, red);
+  }
+  .icon:hover i {
+    color: white;
+    animation: shake 0.75s;
+  }
+  @keyframes shake {
+    10% {
+      transform: rotate(15deg);
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    30% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-15deg);
+    }
+  }
+  footer {
+    margin: 3rem 0px;
+  }
+  footer p {
+    text-align: center;
+    font-weight: 600;
+    /* padding: 1%; */
+  }
+  .up-arrow {
+    float: right;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom right, yellow, red);
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 20px; */
+    border-radius: 50%;
+    display: flex;
+  }
+  .up-arrow i {
+    color: black;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
